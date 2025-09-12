@@ -1,0 +1,125 @@
+/* ====================
+   全局样式
+   ==================== */
+:root {
+    --card-bg-color: #ffffff;
+    --text-color: #333;
+    --link-color: #e74c3c; /* 红色 */
+    --link-hover-color: #c0392b; /* 深红色 */
+    --border-color: #e0e6ed;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #fce2e2 0%, #f4f6f9 100%);
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* ====================
+   头部样式
+   ==================== */
+.header {
+    text-align: center;
+    padding: 30px 15px;
+    background-color: var(--card-bg-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.header h1 {
+    font-size: 2.2em;
+    margin: 0 0 5px;
+    color: #2c3e50;
+}
+
+.red-text {
+    color: var(--link-color);
+}
+
+.header p {
+    font-size: 1em;
+    color: #7f8c8d;
+    margin: 0;
+}
+
+/* ====================
+   卡片与链接样式
+   ==================== */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.category-card {
+    background-color: var(--card-bg-color);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.category-card h2 {
+    font-size: 1.4em;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    border-bottom: 2px solid var(--link-color);
+    padding-bottom: 8px;
+}
+
+.link-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.link-list li {
+    width: calc(50% - 4px);
+}
+
+.link-list a {
+    display: block;
+    background-color: #f5f7f9;
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+}
+
+.link-list a:hover {
+    background-color: var(--link-color);
+    color: #fff;
+}
+
+/* ====================
+   底部样式
+   ==================== */
+.footer {
+    text-align: center;
+    padding: 20px 15px;
+    font-size: 0.8em;
+    color: #7f8c8d;
+    margin-top: 30px;
+    background-color: var(--card-bg-color);
+    border-top: 1px solid var(--border-color);
+}
