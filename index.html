@@ -3,135 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>转了个转</title> <style>
-        /* 全局样式 - 渐变背景风格 */
-        :root {
-            --card-bg-color: #ffffff;
-            --text-color: #333;
-            --link-color: #e74c3c; /* 红色 */
-            --link-hover-color: #c0392b; /* 深红色 */
-            --border-color: #e0e6ed;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            color: var(--text-color);
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            /* 渐变背景 */
-            background: linear-gradient(135deg, #fce2e2 0%, #f4f6f9 100%);
-            background-attachment: fixed;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 15px;
-        }
-
-        /* 头部 */
-        .header {
-            text-align: center;
-            padding: 30px 15px;
-            background-color: var(--card-bg-color);
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .header h1 {
-            font-size: 2.2em;
-            margin: 0 0 5px;
-            color: #2c3e50; /* 默认文字颜色 */
-        }
-
-        /* 新增样式：红色文字 */
-        .red-text {
-            color: var(--link-color); /* 使用主题红色 */
-        }
-
-        .header p {
-            font-size: 1em;
-            color: #7f8c8d;
-            margin: 0;
-        }
-
-        /* 内容区块 */
-        .category-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 15px;
-        }
-
-        /* 卡片 */
-        .category-card {
-            background-color: var(--card-bg-color);
-            border-radius: 12px;
-            padding: 20px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .category-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        .category-card h2 {
-            font-size: 1.4em;
-            margin-top: 0;
-            margin-bottom: 15px;
-            color: #2c3e50;
-            border-bottom: 2px solid var(--link-color);
-            padding-bottom: 8px;
-        }
-
-        .link-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-
-        .link-list li {
-            width: calc(50% - 4px);
-        }
-        
-        .link-list a {
-            display: block;
-            background-color: #f5f7f9;
-            padding: 12px;
-            border-radius: 8px;
-            text-decoration: none;
-            color: var(--text-color);
-            transition: background-color 0.3s ease, color 0.3s ease;
-            text-align: center;
-        }
-
-        .link-list a:hover {
-            background-color: var(--link-color);
-            color: #fff;
-        }
-
-        /* 底部 */
-        .footer {
-            text-align: center;
-            padding: 20px 15px;
-            font-size: 0.8em;
-            color: #7f8c8d;
-            margin-top: 30px;
-            background-color: var(--card-bg-color);
-            border-top: 1px solid var(--border-color);
-        }
-    </style>
+    <title>转了个转</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="header">
     <h1><span class="red-text">转</span>了个<span class="red-text">转</span></h1>
     <p>问题反馈、建议、请联系微信：E36675</p>
-
 </header>
 
 <main class="container">
@@ -269,18 +148,12 @@
 </main>
 
 <footer class="footer">
-    
-<footer>
-<footer>
-<footer>
-<footer>
-  <p>
-    本站内容来自互联网，如有侵权请提供证明，我们将在48小时内删除。<br><br>
-    <span style="color: black;">
-      Copyright © 2025 转了个转. All Rights Reserved.
-    </span>
-  </p>
+    <p>
+        本站内容来自互联网，如有侵权请提供证明，我们将在48小时内删除。<br><br>
+        <span style="color: black;">
+            Copyright © 2025 转了个转. All Rights Reserved.
+        </span>
+    </p>
 </footer>
 </body>
-
 </html>
