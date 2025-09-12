@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>转了个转</title> <style>
+        /* 全局样式 - 渐变背景风格 */
+        :root {
+            --card-bg-color: #ffffff;
+            --text-color: #333;
+            --link-color: #e74c3c; /* 红色 */
+            --link-hover-color: #c0392b; /* 深红色 */
+            --border-color: #e0e6ed;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            /* 渐变背景 */
+            background: linear-gradient(135deg, #fce2e2 0%, #f4f6f9 100%);
+            background-attachment: fixed;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+
+        /* 头部 */
+        .header {
+            text-align: center;
+            padding: 30px 15px;
+            background-color: var(--card-bg-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .header h1 {
+            font-size: 2.2em;
+            margin: 0 0 5px;
+            color: #2c3e50; /* 默认文字颜色 */
+        }
+
+        /* 新增样式：红色文字 */
+        .red-text {
+            color: var(--link-color); /* 使用主题红色 */
+        }
+
+        .header p {
+            font-size: 1em;
+            color: #7f8c8d;
+            margin: 0;
+        }
+
+        /* 内容区块 */
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+        }
+
+        /* 卡片 */
+        .category-card {
+            background-color: var(--card-bg-color);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .category-card h2 {
+            font-size: 1.4em;
+            margin-top: 0;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            border-bottom: 2px solid var(--link-color);
+            padding-bottom: 8px;
+        }
+
+        .link-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .link-list li {
+            width: calc(50% - 4px);
+        }
+        
+        .link-list a {
+            display: block;
+            background-color: #f5f7f9;
+            padding: 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--text-color);
+            transition: background-color 0.3s ease, color 0.3s ease;
+            text-align: center;
+        }
+
+        .link-list a:hover {
+            background-color: var(--link-color);
+            color: #fff;
+        }
+
+        /* 底部 */
+        .footer {
+            text-align: center;
+            padding: 20px 15px;
+            font-size: 0.8em;
+            color: #7f8c8d;
+            margin-top: 30px;
+            background-color: var(--card-bg-color);
+            border-top: 1px solid var(--border-color);
+        }
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <h1><span class="red-text">转</span>了个<span class="red-text">转</span></h1>
+    <p>问题反馈、建议、请联系微信：E36675</p>
+
+</header>
+
+<main class="container">
+    <div class="category-grid">
+        <section class="category-card">
+            <h2>常用查询</h2>
+            <ul class="link-list">
+                <li><a href="https://checkcoverage.apple.com/">苹果</a></li>
+                <li><a href="https://consumer.huawei.com/cn/support/warranty-query/">华为</a></li>
+                <li><a href="https://support.vivo.com.cn/service/authenticityCheck">vivo</a></li>
+                <li><a href="https://support.oppo.com/cn/check/">OPPO/一加</a></li>
+                <li><a href="https://chat.kefu.mi.com/page/activation#/">小米</a></li>
+                <li><a href="https://i.mi.com/find/device/activationlock#/status?_k=as4rmy">小米ID状态</a></li>
+                <li><a href="https://newsupport.lenovo.com.cn/guardeploySearch.html">联想</a></li>
+                <li><a href="https://www.realme.com/cn/support/phonecheck">真我</a></li>
+                <li><a href="https://www.honor.com/cn/support/warranty-query/">荣耀</a></li>
+                <li><a href="https://service.meizu.com/authenticity.html">魅族</a></li>
+                <li><a href="https://support-cn.samsung.com.cn/product_validation/ProductVerification/accessories.html">三星</a></li>
+                <li><a href="https://m.nubia.com/active/authenticitycheck">努比亚</a></li>
+            </ul>
+        </section>
+
+        <section class="category-card">
+            <h2>常用工具</h2>
+            <ul class="link-list">
+                <li><a href="https://dl.zhuanstatic.com/fecommon/zz-zlj-android-updoor-check-simplify_Release_1.2.19_2024-02-04-16-06-14_Online.apk">验机精灵-安卓</a></li>
+                <li><a href="https://wwg.lanzouo.com/in1q635owm1i">验机精灵-苹果</a></li>
+                <li><a href="https://bvapk.zhuanzhuan.com/BVEnginerUpdoor.apk">上门超人</a></li>
+                <li><a href="https://m.i4.cn/installBoxAndroid">爱思助手</a></li>
+                <li><a href="https://jidaxia.net/down">机大侠查三星</a></li>
+                <li><a href="https://cloud.189.cn/web/share?code=uUnie2UZfmIz">隐私清除</a></li>
+                <li><a href="https://sr.aihuishou.com/opt/apps/android/jdx-phone-check/jdx-phone-check-app.apk">安卓平替</a></li>
+                <li><a href="https://jidaxia.net/">笔记本平替</a></li>
+                <li><a href="http://zj.zhuanstatic.com/brain/brain-1752746769426-win-ia32-unpacked3.1.12.zip">Win验机最新</a></li>
+                <li><a href="https://fearch.zhuanstatic.com/MacDetector3_md77x1jhihq.zip">IP验机最新</a></li>
+                <li><a href="https://cloud.189.cn/web/share?code=vEnM3ynQnARj">图吧工具箱</a></li>
+                <li><a href="https://ludashi.com">鲁大师</a></li>
+                <li><a href="https://detail.zol.com.cn/notebook_index/subcate16_list_1.html">中关村</a></li>
+                <li><a href="https://bvapk.zhuanzhuan.com/BVEnginerUpdoor.apk">上门超人</a></li>
+                <li><a href="http://1.92.156.154/index/index/groupchat.html?id=59">互传文字</a></li>
+                <li><a href="https://filehelper.weixin.qq.com/?from=windows&type=recommend">电脑打开传输</a></li>
+                <li><a href="https://www.antutu.com/download.htm">安兔兔</a></li>
+                <li><a href="https://www.160.com/downloads">驱动人生</a></li>
+            </ul>
+        </section>
+
+        <section class="category-card">
+            <h2>在线检测</h2>
+            <ul class="link-list">
+                <li><a href="http://1.155m.cn/zaixian/tu/a.jpg">白图</a></li>
+                <li><a href="http://1.155m.cn/zaixian/bijiben/bijiben.html">屏幕检测</a></li>
+                <li><a href="https://www.onlinemictest.com/zh/controller-tester/">手柄检测</a></li>
+                <li><a href="https://www.onlinemictest.com/zh/sound-test/">声音检测</a></li>
+                <li><a href="http://1.155m.cn/zaixian/tu/b.jpg">灰图</a></li>
+                <li><a href="https://www.onlinemictest.com/zh/keyboard-test/">键盘检测</a></li>
+                <li><a href="https://cps-check.com/cn/mouse-buttons-test">鼠标检测</a></li>
+                <li><a href="https://www.onlinemictest.com/zh/">麦克风检测</a></li>
+                <li><a href="http://1.155m.cn/zaixian/tu/c.jpg">黑图</a></li>
+            </ul>
+        </section>
+        
+        <section class="category-card">
+            <h2>笔记本类</h2>
+            <ul class="link-list">
+                <li><a href="https://newsupport.lenovo.com.cn/guardeploySearch.html">联想</a></li>
+                <li><a href="https://newthink.lenovo.com.cn/guarantee.html">Think</a></li>
+                <li><a href="https://www.dell.com/support/contractservices/zh-cn/">戴尔</a></li>
+                <li><a href="https://support.hp.com/cn-zh/check-warranty">惠普</a></li>
+                <li><a href="https://www.acer.com.cn/support.html?type=1">宏碁</a></li>
+                <li><a href="https://www.firebat.com.cn/index/inspection">火影</a></li>
+                <li><a href="https://www.asus.com.cn/support/warranty-status-inquiry/">华硕</a></li>
+                <li><a href="http://kfgl.hasee.com/lookup/peizhi/index.asp">神舟</a></li>
+                <li><a href="https://mybusinessservice.surface.com/zh-CN/CheckWarranty/CheckWarranty">微软</a></li>
+                <li><a href="https://www.colorful.cn/home/sn">七彩虹</a></li>
+                <li><a href="https://newsupport.lenovo.com.cn/driveDownloads_detail.html?driveId=108440">联想X-Rite</a></li>
+            </ul>
+        </section>
+
+        <section class="category-card">
+            <h2>其他类</h2>
+            <ul class="link-list">
+                <li><a href="https://consumer.huawei.com/cn/support/sparepart-price/">华为查颜色</a></li>
+                <li><a href="https://consumer.huawei.com/cn/support/warranty-query/">荣耀老机型</a></li>
+                <li><a href="https://i.mi.com/find/device/activationlock#/status?_k=as4rmy">小米设备状态</a></li>
+                <li><a href="https://chat.kefu.mi.com/page/activation#/">小米激活状态</a></li>
+                <li><a href="https://m.mi.com/aftersale/security">小米真伪查询</a></li>
+                <li><a href="https://www.mi.com/service/notebook/drivers">小米笔记本查询型号</a></li>
+                <li><a href="https://support-cn.samsung.com.cn/supportcn/imei/default.aspx">三星激活日期</a></li>
+                <li><a href="https://www.okii.com/html/pc/service/all_services.html?activeIndex=2">小天才</a></li>
+                <li><a href="https://zzsso.zhuanspirit.com/user/login?host=zzsso.zhuanspirit.com&appType=1&scheme=https&targetHost=mht.zhuanspirit.com&urlParam=%2Fredirect%3Fredirect%3Dhttps%3A%2F%2Fmht.zhuanspirit.com%252F#/orderManage">上门运营</a></li>
+                <li><a href="https://zzsso.zhuanspirit.com/user/login?host=zzsso.zhuanspirit.com&appType=1&scheme=https&targetHost=nmht.zhuanspirit.com&urlParam=%2Fredirect%3Fredirect%3Dhttps%3A%2F%2Fnmht.zhuanspirit.com%252Fjudge%252Fgeneral">答疑系统</a></li>
+                <li><a href="https://yiyan.baidu.com/">文心一言</a></li>
+                <li><a href="https://www.doubao.com/chat/">豆包</a></li>
+            </ul>
+        </section>
+
+        <section class="category-card">
+            <h2>相机快门次数</h2>
+            <ul class="link-list">
+                <li><a href="https://digeeker.com/">全品牌查询</a></li>
+                <li><a href="https://canon.digeeker.com/">佳能</a></li>
+                <li><a href="https://nikon.digeeker.com/">尼康</a></li>
+                <li><a href="https://sony.digeeker.com/">索尼</a></li>
+                <li><a href="https://fuji.digeeker.com/">富士</a></li>
+                <li><a href="https://pentax.digeeker.com/">宾得</a></li>
+                <li><a href="https://ricoh.digeeker.com/">理光</a></li>
+                <li><a href="https://www.eosmsg.org/">软件查询</a></li>
+                <li><a href="https://www.canon.com.cn/supports/app/#/id=camera&Canon_Camera_Connect">手机连佳能</a></li>
+                <li><a href="https://www.nikon.com.cn/sc_CN/service-and-support/downloads/app.tag/app/wireless_mobile_utility.dcr">手机连尼康</a></li>
+                <li><a href="https://www.sonystyle.com.cn/minisite/cross/app/imaging.htm#creators">手机连索尼</a></li>
+            </ul>
+        </section>
+
+        <section class="category-card">
+            <h2>文档类（企业微信）</h2>
+            <ul class="link-list">
+                <li><a href="https://doc.weixin.qq.com/sheet/e3_AdEAPwZSAIwTtoCR0Y5QVCuSyPKVW?scode=AJ4AfQfgAAwH05Ocg5ATYAPQawAHE&tab=BB08J2">工具表总汇</a></li>
+                <li><a href="https://doc.weixin.qq.com/doc/w3_ARcA6waoALIgwjzZfZISDqCo0ZCJg?scode=AJ4AfQfgAAwjz9jF51ATYAPQawAHE">官网查询总汇</a></li>
+                <li><a href="https://doc.weixin.qq.com/sheet/e3_AdgAXQaBANQbUI2qwyTQAur0p1JYs?scode=AJ4AfQfgAAwCT9jMQzATYAPQawAHE">成长手册</a></li>
+                <li><a href="https://doc.weixin.qq.com/doc/w3_AdgAXQaBANQw260n2nYQq2IkMjfW5?scode=AJ4AfQfgAAwJ4hCEpv">等级体系</a></li>
+                <li><a href="https://docs.qq.com/sheet/DRnJVQ2tlc1VScmtZ?tab=woxftk&from_account_guide=1&clickStart=1740414205586">笔记本雅典娜</a></li>
+                <li><a href="https://doc.weixin.qq.com/doc/w3_AXUAiAZSAKIx7EuM7AkRsOBdOygOr?scode=AJ4AfQfgAAwvNVbmonATYAPQawAHE">笔记本确认型号</a></li>
+                <li><a href="https://doc.weixin.qq.com/doc/w3_ATsAPAZNALwNBlNFeeXSuOFADrmZV?scode=AJ4AfQfgAAwNP2oMsFATYAPQawAHE">笔记本跳联网</a></li>
+                <li><a href="https://doc.weixin.qq.com/doc/w3_AZkAeAaNAM8fm5D2TYYRCuDgPH4BW?scode=AJ4AfQfgAAwSNHOXPZATYAPQawAHE">笔记本查解锁</a></li>
+                <li><a href="https://doc.weixin.qq.com/doc/w3_ANkABQbsAOkH031o8sXReGAglD0RS?scode=AJ4AfQfgAAwJJq8Dp1ATYAPQawAHE">手机重点拆修</a></li>
+                <li><a href="https://doc.weixin.qq.com/doc/w3_AdEALQbcAA4uYgWaSs8S1a5Uat61W?scode=AJ4AfQfgAAwekTsvFdATYAPQawAHE">手机监管机</a></li>
+                <li><a href="https://doc.weixin.qq.com/doc/w3_AdgAXQaBANQzEEM3U4STiWBp0lII1?scode=AJ4AfQfgAAw9221hHPAdEAPwZSAIw">手机质检流程</a></li>
+                <li><a href="https://doc.weixin.qq.com/sheet/e3_AdEALQbcAA4UezkjQIHT1asLWVtHy?scode=AJ4AfQfgAAwZYFUK8mATYAPQawAHE&tab=BB08J2">手机拆机图</a></li>
+                <li><a href="https://doc.weixin.qq.com/doc/w3_AC0A5QbAAB8IhfiIFE6TfG9yv1OSl?scode=AJ4AfQfgAAwmbhyVZMATYAPQawAHE">耳机查找定位</a></li>
+                <li><a href="https://doc.weixin.qq.com/doc/w3_AC0A5QbAAB8005Bd1xHS5SsdT8uy0?scode=AJ4AfQfgAAwOHNha3qATYAPQawAHE">山寨耳机</a></li>
+                <li><a href="https://support.apple.com/zh-cn/109525">IP耳机小型号</a></li>
+            </ul>
+        </section>
+    </div>
+</main>
+
+<footer class="footer">
+    
+<footer>
+<footer>
+<footer>
+<footer>
+  <p>
+    本站内容来自互联网，如有侵权请提供证明，我们将在48小时内删除。<br><br>
+    <span style="color: black;">
+      Copyright © 2025 转了个转. All Rights Reserved.
+    </span>
+  </p>
+</footer>
+</body>
+</html>
